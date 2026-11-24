@@ -1,0 +1,37 @@
+name: Package & Release Extension ZIP
+
+on:
+  release:
+    types: [published]
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    name: Build Chrome/Edge Extension Package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create clean extension ZIP
+        run: |
+          zip -r stylesniper-chrome-edge.zip manifest.json src icons -x "*.DS_Store"
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stylesniper-chrome-edge
+          path: stylesniper-chrome-edge.zip
+
+      - name: Attach ZIP to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: stylesniper-chrome-edge.zip
