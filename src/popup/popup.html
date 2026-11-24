@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleSniper</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="#262C36" stroke-width="1.5" fill="#141820"/>
+            <circle cx="12" cy="12" r="5" stroke="#38BDF8" stroke-width="1.5"/>
+            <line x1="12" y1="3.5" x2="12" y2="7" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="12" y1="17" x2="12" y2="20.5" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="3.5" y1="12" x2="7" y2="12" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="17" y1="12" x2="20.5" y2="12" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="1.5" fill="#10B981"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="title">StyleSniper</h1>
+          <p class="subtitle">X-Ray Inspector &amp; Design Extractor</p>
+        </div>
+      </div>
+      <span class="status-pill" id="status-pill">STANDBY</span>
+    </header>
+
+    <div class="error-banner" id="error-banner" hidden></div>
+
+    <main class="actions">
+      <button class="action-btn primary" id="btn-xray">
+        <span class="action-left">
+          <span class="action-icon icon-cyan">◎</span>
+          <span class="action-text">
+            <span class="action-label" id="xray-label">Launch X-Ray Inspector</span>
+            <span class="action-desc">60fps box model, redlines &amp; WCAG</span>
+          </span>
+        </span>
+        <kbd class="kbd">Alt+Shift+X</kbd>
+      </button>
+
+      <button class="action-btn" id="btn-extractor">
+        <span class="action-left">
+          <span class="action-icon icon-amber">◈</span>
+          <span class="action-text">
+            <span class="action-label">Extract Page Design System</span>
+            <span class="action-desc">Colors, typography scale &amp; SVGs</span>
+          </span>
+        </span>
+        <span class="arrow">→</span>
+      </button>
+    </main>
+
+    <section class="format-section">
+      <div class="section-label">Preferred Copy Format</div>
+      <div class="segmented" role="group" aria-label="Preferred Copy Format">
+        <button class="seg-btn active" data-format="tailwind">Tailwind</button>
+        <button class="seg-btn" data-format="css">CSS</button>
+        <button class="seg-btn" data-format="jsx">JSX</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="shortcuts">
+        <span><kbd>Space</kbd> Pin</span>
+        <span><kbd>Alt</kbd> Redline</span>
+        <span><kbd>E</kbd> Edit</span>
+        <span><kbd>Esc</kbd> Exit</span>
+      </div>
+      <span class="version">v1.0.0</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
