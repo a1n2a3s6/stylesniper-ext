@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <linearGradient id="dbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090B0F" />
+      <stop offset="100%" stop-color="#111622" />
+    </linearGradient>
+    <style>
+      .cursor-sim { animation: hoverPath 7s ease-in-out infinite; }
+      .box-hl { animation: boxPulse 7s ease-in-out infinite; }
+      .redline-fade { animation: redShow 7s ease-in-out infinite; }
+      @keyframes hoverPath {
+        0%, 100% { transform: translate(190px, 165px); }
+        45% { transform: translate(480px, 195px); }
+        75% { transform: translate(480px, 195px); }
+      }
+      @keyframes boxPulse {
+        0%, 35% { opacity: 0.35; }
+        45%, 80% { opacity: 1; }
+        90%, 100% { opacity: 0.35; }
+      }
+      @keyframes redShow {
+        0%, 40% { opacity: 0; }
+        50%, 82% { opacity: 1; }
+        92%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="380" rx="18" fill="url(#dbg)" stroke="#262C36" stroke-width="2" />
+
+  
+  <rect x="2" y="2" width="1196" height="42" rx="16" fill="#141820" />
+  <circle cx="28" cy="23" r="6" fill="#EF4444" />
+  <circle cx="48" cy="23" r="6" fill="#F59E0B" />
+  <circle cx="68" cy="23" r="6" fill="#10B981" />
+  <rect x="110" y="10" width="420" height="26" rx="6" fill="#090B0F" stroke="#262C36" />
+  <text x="128" y="27" fill="#9CA3AF" font-family="Consolas, monospace" font-size="12">https://any-live-website.com/pricing</text>
+  <rect x="1030" y="9" width="146" height="28" rx="6" fill="#064E3B" stroke="#10B981" />
+  <text x="1103" y="27" text-anchor="middle" fill="#34D399" font-family="Consolas, monospace" font-size="11" font-weight="700">🎯 X-RAY: ON</text>
+
+  
+  <g transform="translate(64, 88)">
+    <rect width="260" height="240" rx="14" fill="#121722" stroke="#38BDF8" stroke-width="2" />
+    <text x="20" y="38" fill="#F8FAFC" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="18" font-weight="700">Starter Plan</text>
+    <text x="20" y="84" fill="#38BDF8" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="36" font-weight="900">$0/mo</text>
+    <rect x="20" y="110" width="200" height="10" rx="5" fill="#1F2937" />
+    <rect x="20" y="132" width="160" height="10" rx="5" fill="#1F2937" />
+    <rect x="20" y="176" width="220" height="42" rx="8" fill="#1F2937" />
+    <text x="130" y="202" text-anchor="middle" fill="#E5E7EB" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="13" font-weight="700">Start Free</text>
+  </g>
+
+  
+  <g class="redline-fade">
+    <line x1="324" y1="208" x2="396" y2="208" stroke="#F59E0B" stroke-width="2" />
+    <line x1="324" y1="196" x2="324" y2="220" stroke="#F59E0B" stroke-width="2" />
+    <line x1="396" y1="196" x2="396" y2="220" stroke="#F59E0B" stroke-width="2" />
+    <rect x="336" y="176" width="48" height="22" rx="4" fill="#F59E0B" />
+    <text x="360" y="191" text-anchor="middle" fill="#090B0F" font-family="Consolas, monospace" font-size="11" font-weight="800">72px</text>
+  </g>
+
+  
+  <g transform="translate(396, 88)">
+    <rect class="box-hl" x="-12" y="-12" width="284" height="264" rx="18" fill="#F59E0B" fill-opacity="0.10" stroke="#F59E0B" stroke-dasharray="5 4" />
+    <rect width="260" height="240" rx="14" fill="#121722" stroke="#10B981" stroke-width="2" />
+    <text x="20" y="38" fill="#F8FAFC" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="18" font-weight="700">Pro Builder</text>
+    <text x="20" y="84" fill="#34D399" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="36" font-weight="900">$19/mo</text>
+    <rect x="20" y="110" width="210" height="10" rx="5" fill="#1F2937" />
+    <rect x="20" y="132" width="175" height="10" rx="5" fill="#1F2937" />
+    <rect x="20" y="176" width="220" height="42" rx="8" fill="#10B981" />
+    <text x="130" y="202" text-anchor="middle" fill="#06281E" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="13" font-weight="800">Deploy Now</text>
+  </g>
+
+  
+  <g transform="translate(730, 68)">
+    <rect width="438" height="284" rx="14" fill="#0D1017" stroke="#2D3542" stroke-width="1.8" />
+    <text x="20" y="32" fill="#F8FAFC" font-family="Consolas, monospace" font-size="13" font-weight="700">🎨 EXTRACTED DESIGN SYSTEM</text>
+    <line x1="20" y1="44" x2="418" y2="44" stroke="#1F242D" />
+
+    <text x="20" y="70" fill="#9CA3AF" font-family="Consolas, monospace" font-size="11">COLOR PALETTE (CLICK TO COPY / EXPORT CSS VARS):</text>
+    <g transform="translate(20, 82)">
+      <rect x="0" y="0" width="68" height="34" rx="6" fill="#090B0F" stroke="#374151" />
+      <rect x="78" y="0" width="68" height="34" rx="6" fill="#121722" stroke="#374151" />
+      <rect x="156" y="0" width="68" height="34" rx="6" fill="#10B981" />
+      <rect x="234" y="0" width="68" height="34" rx="6" fill="#38BDF8" />
+      <rect x="312" y="0" width="68" height="34" rx="6" fill="#F59E0B" />
+    </g>
+
+    <text x="20" y="144" fill="#9CA3AF" font-family="Consolas, monospace" font-size="11">TYPOGRAPHY SCALE:</text>
+    <text x="20" y="166" fill="#E5E7EB" font-family="Consolas, monospace" font-size="12">Inter • 36px / 900  │  18px / 700  │  13px / 500</text>
+
+    <text x="20" y="198" fill="#9CA3AF" font-family="Consolas, monospace" font-size="11">INLINE SVG GOBBLER (14 ICONS FOUND):</text>
+    <g transform="translate(20, 210)" font-family="Consolas, monospace" font-size="11">
+      <rect x="0" y="0" width="122" height="32" rx="6" fill="#141820" stroke="#2D3542" />
+      <text x="61" y="20" text-anchor="middle" fill="#38BDF8">⬇ logo.svg</text>
+      <rect x="134" y="0" width="122" height="32" rx="6" fill="#141820" stroke="#2D3542" />
+      <text x="195" y="20" text-anchor="middle" fill="#34D399">⬇ check.svg</text>
+      <rect x="268" y="0" width="122" height="32" rx="6" fill="#141820" stroke="#2D3542" />
+      <text x="329" y="20" text-anchor="middle" fill="#FBBF24">⬇ arrow.svg</text>
+    </g>
+
+    <text x="20" y="268" fill="#10B981" font-family="Consolas, monospace" font-size="11" font-weight="700">✓ Shadow DOM Isolated — Zero Host CSS Conflicts</text>
+  </g>
+
+  
+  <g class="cursor-sim">
+    <polygon points="0,0 0,24 7,18 12,28 16,26 11,16 19,16" fill="#FFFFFF" stroke="#090B0F" stroke-width="1.5" />
+  </g>
+</svg>

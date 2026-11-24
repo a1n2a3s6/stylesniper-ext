@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="1200" height="350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090D" />
+      <stop offset="55%" stop-color="#0F131A" />
+      <stop offset="100%" stop-color="#14120B" />
+    </linearGradient>
+    <radialGradient id="amberGlow" cx="80%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.24" />
+      <stop offset="60%" stop-color="#10B981" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#07090D" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#1F242D" stroke-width="0.9" />
+    </pattern>
+    <style>
+      .reticle { animation: targetMove 5.5s ease-in-out infinite; }
+      .pulse { animation: blink 1.6s ease-in-out infinite; }
+      .hud-pop { animation: hudFloat 3.4s ease-in-out infinite; }
+      @keyframes targetMove {
+        0%, 100% { transform: translate(0px, 0px); }
+        50% { transform: translate(18px, -10px); }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+      @keyframes hudFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="350" rx="20" fill="url(#bg)" />
+  <rect width="1200" height="350" rx="20" fill="url(#grid)" />
+  <rect width="1200" height="350" rx="20" fill="url(#amberGlow)" />
+  <rect x="1" y="1" width="1198" height="348" rx="19" fill="none" stroke="#262C36" stroke-width="2" />
+
+  
+  <g transform="translate(60, 44)">
+    <rect width="318" height="32" rx="16" fill="#11141B" stroke="#F59E0B" stroke-opacity="0.5" />
+    <circle class="pulse" cx="18" cy="16" r="5" fill="#F59E0B" />
+    <text x="34" y="21" fill="#FDE68A" font-family="Consolas, monospace" font-size="13" font-weight="700">MANIFEST V3 // DAY 12 OF 365</text>
+  </g>
+
+  
+  <text x="60" y="152" fill="url(#titleGrad)" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="72" font-weight="900" letter-spacing="-2">STYLESNIPER</text>
+  <text x="62" y="194" fill="#9CA3AF" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="21" font-weight="500">Hover any element on any website. Snipe Tailwind, CSS, Redlines &amp; SVGs.</text>
+  <text x="62" y="224" fill="#6B7280" font-family="Consolas, monospace" font-size="14">Free Open-Source Alternative to $90 CSS Scan  •  Zero Build  •  Shadow DOM Isolated</text>
+
+  
+  <g transform="translate(60, 262)" font-family="Consolas, monospace" font-size="13" font-weight="700">
+    <rect x="0" y="0" width="144" height="34" rx="8" fill="#11141B" stroke="#2D3542" />
+    <text x="16" y="22" fill="#FBBF24">Chrome / Edge</text>
+    <rect x="156" y="0" width="146" height="34" rx="8" fill="#11141B" stroke="#2D3542" />
+    <text x="172" y="22" fill="#38BDF8">Tailwind Gen</text>
+    <rect x="314" y="0" width="148" height="34" rx="8" fill="#11141B" stroke="#2D3542" />
+    <text x="330" y="22" fill="#34D399">WCAG Contrast</text>
+    <rect x="474" y="0" width="136" height="34" rx="8" fill="#11141B" stroke="#2D3542" />
+    <text x="490" y="22" fill="#F87171">Alt Redlines</text>
+  </g>
+
+  
+  <g transform="translate(745, 58)">
+    
+    <g class="reticle">
+      <rect x="38" y="20" width="210" height="58" rx="12" fill="#10B981" fill-opacity="0.14" stroke="#10B981" stroke-width="2" stroke-dasharray="6 4" />
+      <rect x="52" y="32" width="182" height="34" rx="8" fill="#111827" stroke="#38BDF8" stroke-width="1.6" />
+      <text x="143" y="54" text-anchor="middle" fill="#F8FAFC" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="14" font-weight="700">Get Started Free →</text>
+      
+      <line x1="258" y1="20" x2="258" y2="78" stroke="#F59E0B" stroke-width="1.5" />
+      <rect x="266" y="38" width="52" height="22" rx="4" fill="#F59E0B" />
+      <text x="292" y="53" text-anchor="middle" fill="#090B0F" font-family="Consolas, monospace" font-size="11" font-weight="800">58px</text>
+    </g>
+
+    
+    <g class="hud-pop" transform="translate(18, 114)">
+      <rect width="382" height="148" rx="12" fill="#0D1017" stroke="#2D3542" stroke-width="1.8" />
+      <rect x="0" y="0" width="382" height="34" rx="12" fill="#161B24" />
+      <text x="16" y="22" fill="#38BDF8" font-family="Consolas, monospace" font-size="12" font-weight="700">&lt;button.cta-primary&gt;  182 × 34</text>
+      <rect x="296" y="7" width="74" height="20" rx="4" fill="#064E3B" stroke="#10B981" />
+      <text x="333" y="21" text-anchor="middle" fill="#34D399" font-family="Consolas, monospace" font-size="10" font-weight="700">AAA 14.8</text>
+      <text x="16" y="60" fill="#9CA3AF" font-family="Consolas, monospace" font-size="11">TAILWIND OUTPUT (CLICK TO COPY):</text>
+      <rect x="16" y="70" width="350" height="44" rx="6" fill="#090B0F" stroke="#1F242D" />
+      <text x="26" y="88" fill="#FBBF24" font-family="Consolas, monospace" font-size="11">inline-flex items-center px-4 py-2</text>
+      <text x="26" y="104" fill="#34D399" font-family="Consolas, monospace" font-size="11">rounded-lg bg-[#111827] text-sm font-bold</text>
+      <text x="16" y="134" fill="#6B7280" font-family="Consolas, monospace" font-size="11">[Space] Pin   [Alt] Redlines   [C] Copy</text>
+    </g>
+  </g>
+</svg>
